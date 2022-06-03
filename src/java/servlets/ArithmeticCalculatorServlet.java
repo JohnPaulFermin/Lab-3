@@ -27,6 +27,11 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
             throws ServletException, IOException {
         String firstnum = request.getParameter("first_num");
         String secnum = request.getParameter("sec_num");
+        
+        
+        
+                request.setAttribute("firstNum", firstnum);
+                request.setAttribute("secNum", secnum);
 try{
 
 
